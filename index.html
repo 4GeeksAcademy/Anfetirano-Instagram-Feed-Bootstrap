@@ -26,9 +26,69 @@
               </div>
               <!-- buttons green and gray -->
               <div class="buttons">
-                <button class="btn btn-success" type="submit">
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  data-bs-whatever="@mdo"
+                >
                   Create a new post
                 </button>
+
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                          Create a new post
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="message-text" class="col-form-label"
+                              >Caption:</label
+                            >
+                            <textarea
+                              class="form-control"
+                              id="message-text"
+                              placeholder="Add the caption of your post here"
+                            ></textarea>
+                            <div class="iconsmodal">
+                              <i class="fa-solid fa-camera mt-3"></i>
+                              <i class="fa-solid fa-location-dot ms-3"></i>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button type="button" class="btn btn-success">
+                          Publish
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <!-- Dropdown gray button -->
                 <div class="btn-group">
                   <button
@@ -37,7 +97,7 @@
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                  <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-gear" style="color: #ffffff"></i>
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end">
                     <li><a class="dropdown-item" href="#">Profile</a></li>
@@ -59,6 +119,219 @@
         </div>
       </div>
       <!-- final header -->
+      <!-- start icons contain 2 pages  -->
+      <div class="row">
+        <div class="col">
+          <ul
+            class="nav nav-pills mb-3 nocolor justify-content-center mt-2"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                <i class="fa-solid fa-table-cells"></i>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                <i class="fa-solid fa-square"></i>
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+              tabindex="0"
+            >
+              <!-- first row with 3 images  -->
+
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="https://images.ecestaticos.com/6uBjSmsBorRk6l_IHAxkBS1JCwE=/114x0:1997x1410/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F721%2F122%2F714%2F72112271431cb1078c3fe3e75ad5ab41.jpg"
+                    class="img-fluid img-thumbnail"
+                    alt="firstup"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="https://www.1zoom.me/big2/88/151239-SweetAngel.jpg"
+                    class="img-fluid img-thumbnail"
+                    alt="secondup"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="https://10wallpaper.com/wallpaper/1200x900/1210/state_park-mac_os_x_mountain_lion_hd_wallpapers_1200x900.jpg"
+                    class="img-fluid img-thumbnail"
+                    alt="thirdup"
+                  />
+                </div>
+              </div>
+              <!-- Second row with 3 images  -->
+
+              <div class="row mt-3">
+                <div class="col-4">
+                  <img
+                    src="https://wallpaperaccess.com/full/4263762.jpg"
+                    class="img-fluid img-thumbnail"
+                    alt="firstup"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="https://i.pinimg.com/originals/ab/36/11/ab36116d2c72e9b365e97da71d29286e.jpg"
+                    class="img-fluid img-thumbnail"
+                    alt="secondup"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="https://i.imgur.com/AQVqzS3.jpg"
+                    class="img-fluid img-thumbnail"
+                    alt="thirdup"
+                  />
+                </div>
+              </div>
+              <!-- Third row with 3 images  -->
+              <div class="row mt-3">
+                <div class="col-4">
+                  <img
+                    src="https://wallpapers.com/images/hd/animated-space-1200-x-900-background-x4wfgip402ymsahn.jpg"
+                    class="img-fluid img-thumbnail"
+                    alt="firstup"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="https://www.northmayo.ie/wp-content/uploads/2022/06/Ice-house-seaweed-Baths-Pouring-2022-1200x900px.jpg"
+                    class="img-fluid img-thumbnail"
+                    alt="secondup"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="https://www.northmayo.ie/wp-content/uploads/2022/06/Gandalf-the-Great-Gray-Owl-1200x900px.jpg"
+                    class="img-fluid img-thumbnail"
+                    alt="thirdup"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+              tabindex="0"
+            >
+              <!-- Page with a feed like Instagram -->
+              <!-- first feed  -->
+              <div class="row d-flex justify-content-center">
+                <div class="col-4">
+                  <div class="card">
+                    <div
+                      class="card-header d-flex justify-content-between fs-3 fw-bold"
+                    >
+                      My Crazy dog Spark!
+                      <h6 class="card-title2 mt-2">08/26</h6>
+                    </div>
+                    <div class="card-body p-0">
+                      <img
+                        src="https://images.ecestaticos.com/6uBjSmsBorRk6l_IHAxkBS1JCwE=/114x0:1997x1410/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F721%2F122%2F714%2F72112271431cb1078c3fe3e75ad5ab41.jpg"
+                        class="img-fluid"
+                        alt="firstup"
+                      />
+                    </div>
+                    <div class="card-footer text-dark">
+                      <p class="likes fw-bold lh-1">204 Likes</p>
+                      <p class="description lh-1">
+                        This is an example of a very good photo that you can
+                        post on instagram
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Second feed -->
+              <div class="row d-flex justify-content-center mt-3">
+                <div class="col-4">
+                  <div class="card">
+                    <div
+                      class="card-header d-flex justify-content-between fs-3 fw-bold"
+                    >
+                      The greatness of Croatia
+                      <h6 class="card-title2 mt-2">04/09</h6>
+                    </div>
+                    <div class="card-body p-0">
+                      <img
+                        src="https://www.northmayo.ie/wp-content/uploads/2022/06/Ice-house-seaweed-Baths-Pouring-2022-1200x900px.jpg"
+                        class="img-fluid"
+                        alt="firstup"
+                      />
+                    </div>
+                    <div class="card-footer text-dark">
+                      <p class="likes fw-bold lh-1">204 Likes</p>
+                      <p class="description lh-1">
+                        This is an example of a very good photo that you can
+                        post on instagram
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Third Feed -->
+              <div class="row d-flex justify-content-center mt-3">
+                <div class="col-4">
+                  <div class="card">
+                    <div
+                      class="card-header d-flex justify-content-between fs-3 fw-bold"
+                    >
+                      The new WORLD!
+                      <h6 class="card-title2 mt-2">06/10</h6>
+                    </div>
+                    <div class="card-body p-0">
+                      <img
+                        src="https://www.northmayo.ie/wp-content/uploads/2022/06/Gandalf-the-Great-Gray-Owl-1200x900px.jpg"
+                        class="img-fluid"
+                        alt="firstup"
+                      />
+                    </div>
+                    <div class="card-footer text-dark">
+                      <p class="likes fw-bold lh-1">204 Likes</p>
+                      <p class="description lh-1">
+                        This is an example of a very good photo that you can
+                        post on instagram
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script
